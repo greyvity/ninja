@@ -1,38 +1,65 @@
 .App {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Nunito", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body::-webkit-scrollbar {
+  display: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.App img {
+  background-position: center;
+  /* background-size: auto; */
+  object-fit: contain;
+  background-repeat: no-repeat;
+}
+
+.dim {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  filter: opacity(0.3);
+  background: black;
+  z-index: -1;
+}
+
+.ninja {
+  position: absolute;
+  top: 0;
+  z-index: -10;
+}
+
+.info {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.info * {
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.date {
+  font-weight: medium;
+  font-size: 2.6em;
+}
+
+.open {
+  font-weight: medium;
+  font-size: 1.9em;
+  color: #66ada1;
 }
