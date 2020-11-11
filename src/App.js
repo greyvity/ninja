@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 
-import ninja from "./ninja.svg";
+// import ninja from "./ninja.svg";
 import "./App.css";
 
 function App() {
